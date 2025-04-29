@@ -1,0 +1,109 @@
+.L-features {
+  width: 100%;
+  max-width: 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+#L-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#L-box:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.margin {
+  font-size: 24px;
+}
+
+.left-user {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.left-user:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.user-name-userid {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-name-userid img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.L-user {
+  display: flex;
+  flex-direction: column;
+}
+
+.L-user h1 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.L-user span {
+  font-size: 14px;
+  color: #666;
+}
+
+.vert {
+  cursor: pointer;
+}
+
+.logOutExitContainer {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.logOutExitContainer button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.logOutExitContainer button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1200px) {
+  .L-features {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+  }
+} 

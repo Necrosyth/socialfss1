@@ -1,0 +1,53 @@
+.modelForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.row1 {
+  display: flex;
+  gap: 20px;
+}
+
+.inputBox1 {
+  flex: 1;
+}
+
+.inputBox1 input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.inputBox1 input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.modelBtn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: var(--gradient-primary);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.modelBtn:hover {
+  background: var(--gradient-hover);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .row1 {
+    flex-direction: column;
+    gap: 15px;
+  }
+} 
